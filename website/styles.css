@@ -1,0 +1,142 @@
+body
+{
+    font-family: "Arial", sans-serif;
+}
+
+h1
+{
+    font-weight: normal;
+    font-size: 40px;
+    margin: 20px 0;
+    font-family: Georgia, serif;
+}
+
+h2
+{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h3
+{
+    font-weight: normal;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    color: dimgray;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+img
+{
+    border-radius: 3px;
+    width: 100%;
+}
+
+.header
+{
+    /*background-color: lightblue;*/
+    margin: 40px 0;
+}
+
+.cont
+{
+    margin: 40px;
+}
+
+.debug h1 h3
+{
+    color: green;
+}
+
+.center-text
+{
+    text-align: center;
+}
+
+.navbar
+{
+/*    border-top: 3px solid;*/
+    border-bottom: 3px solid gainsboro;
+    padding: 0px 50px; /*vertical and horizontal*/
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.navbar a
+{
+    padding: 0 10px; /* Top & Bottom = 0, Left & Right = 20px */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.selected
+{
+    border-bottom: 3px solid black;
+    margin-bottom: -3px; /* currently being overrided by ".navbar a" */
+}
+
+.flex
+{
+    display: flex;
+}
+
+.full-width
+{
+    width: 100%;
+}
+
+#page_menu
+{
+
+}
+
+#lang_menu
+{
+
+}
+
+#main_cont
+{
+    width: 60%;
+    margin: 0 auto; /* "auto" centers the div horizontally */
+    /*background-color: lightgreen;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#main_img
+{
+    width: 60%;
+}
+
+#find-me
+{
+    flex: 1;
+}
+
+#find-me h2
+{
+    text-align: right;
+    padding: 2px 10px;
+    border-bottom: 3px solid gainsboro;
+    margin: 0;
+}
+
+#find-me h3
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#find-me p
+{
+    margin: 5px 0;
+}
