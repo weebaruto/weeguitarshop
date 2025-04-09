@@ -1,3 +1,8 @@
+:root{
+    --color1: black;
+    --color2: dimgray;
+}
+
 body
 {
     font-family: "Arial", sans-serif;
@@ -7,8 +12,9 @@ h1
 {
     font-weight: normal;
     font-size: 40px;
-    margin: 20px 0;
+    margin: 10px 0;
     font-family: Georgia, serif;
+    color: var(--color1);
 }
 
 h2
@@ -20,9 +26,9 @@ h2
 h3
 {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 22px;
     font-family: "Arial", sans-serif;
-    color: dimgray;
+    color: var(--color2);
     margin: 0;
 }
 
@@ -140,3 +146,15 @@ img
 {
     margin: 5px 0;
 }
+
+#gallery {
+    line-height:0;
+    column-count:5;
+    column-gap:5px;
+ }
+
+ #gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+ }
