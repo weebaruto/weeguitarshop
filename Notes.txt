@@ -33,3 +33,6 @@ class MyElement extends HTMLElement {
         // (happens in document.adoptNode, very rarely used)
     }
 }
+
+// let the browser know that <my-element> is served by our new class
+customElements.define("my-element", MyElement);
