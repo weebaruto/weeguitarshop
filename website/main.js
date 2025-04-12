@@ -1,23 +1,42 @@
-import "./components/header.js";
-import "./components/navbar.js";
+//import "./components/header.js";
+//import "./components/navbar.js";
+//import "./components/translation.js";
 
 function setLanguage(lang) {
     localStorage.setItem("userLanguage", lang);
-    //updateTextContent(lang);
-    //make this.
 }
 
 function loadLanguage() {
     const savedLang = localStorage.getItem("userLanguage");
     if (savedLang) {
-        //updateTextContent(lang);
+        updateTextContent(savedLang);
+    } else {
+        updateTextContent("en"); // default language if userlanguage has not been set before
     }
+}
+
+function updateTextContent(lang) {
+    const elementList = document.querySelectorAll("[data-i18n]");
+
+    elementList.forEach(element => {
+        const text = element.dataset.i18n;
+        element.textContent = translation[text][lang];
+    })
 }
 
 document.querySelectorAll(".lang-btn").forEach(button => {
     button.addEventListener("click", (e) => {
-        setLanguage(e.target.dataset.lang);
+        const lang = e.target.dataset.lang;
+        setLanguage(lang);
+        updateTextContent(lang);
     });
 });
 
 window.addEventListener("DOMContentLoaded", loadLanguage);
+
+const translation = {
+    subtitle: {
+        en: "Handmade guitars from Belfast",
+        jp: "ベルファスト手作りギター"
+    }
+}

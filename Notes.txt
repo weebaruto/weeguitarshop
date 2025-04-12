@@ -1,7 +1,7 @@
 /*
 To-do
 
-set up templates and custom tags
+
 */
 
 //     CUSTOM AUTONOMOUS ELEMET     //
