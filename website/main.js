@@ -18,7 +18,7 @@ function updateTextContent(lang) {
 
     elementList.forEach(element => {
         const text = element.dataset.i18n;
-        element.textContent = translation[text][lang];
+        element.innerHTML = translation[text][lang];
     })
 }
 
