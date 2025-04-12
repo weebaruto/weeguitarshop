@@ -1,6 +1,4 @@
-//import "./components/header.js";
-//import "./components/navbar.js";
-//import "./components/translation.js";
+import translation from "./translation.js";
 
 function setLanguage(lang) {
     localStorage.setItem("userLanguage", lang);
@@ -34,9 +32,9 @@ document.querySelectorAll(".lang-btn").forEach(button => {
 
 window.addEventListener("DOMContentLoaded", loadLanguage);
 
-const translation = {
-    subtitle: {
-        en: "Handmade guitars from Belfast",
-        jp: "ベルファスト手作りギター"
-    }
-}
+// const translation = {
+//     subtitle: {
+//         en: "Handmade guitars from Belfast",
+//         jp: "ベルファスト手作りギター"
+//     }
+// }

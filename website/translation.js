@@ -1,6 +1,8 @@
 const translation = {
     subtitle: {
-        en: "Handmade guitars from Belfast",
+        en: "Handmade guitars from Belfast　",
         jp: "ベルファスト手作りギター"
     }
-}
+};
+
+export default translation;
