@@ -1,7 +1,7 @@
 const translation = {
     subtitle: {
-        en: "Handmade guitars from Belfast　",
-        jp: "ベルファスト手作りギター"
+        en: "Handmade classical guitars from Northern Ireland　",
+        jp: "Handmade classical guitars from Northern Ireland　"
     },
 
     nav_home:{

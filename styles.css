@@ -55,7 +55,9 @@ h3 {
 .header
 {
     /*background-color: lightblue;*/
-    margin: 40px 0;
+    margin: 60px 0;
+    margin-bottom: 50px;
+
 }
 
 .cont
@@ -94,7 +96,7 @@ h3 {
 .selected
 {
     border-bottom: 3px solid var(--color1);
-    margin-bottom: -3px !important; /* currently being overrided by ".navbar a" */
+    margin-bottom: -3px !important;
 }
 
 .flex
