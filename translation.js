@@ -25,7 +25,7 @@ const translation = {
     },
 
     address_title: {
-        en: "address　",
+        en: "Address　",
         jp: "住所"
     },
 
