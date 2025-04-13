@@ -25,45 +25,43 @@ function updateTextContent(lang) {
     elementList.forEach(element => {
         const text = element.dataset.i18n;
         element.innerHTML = translation[text][lang];
+    });
+    
+    document.querySelectorAll("[data-lang]").forEach(element => {
+        element.classList.remove("selected");
+        if (lang == element.dataset.lang) {
+            element.classList.add("selected");
+        }
     })
-
-    document.querySelector(`[data-lang="${lang}"]`).classList.add("selected");
-    // const buttonList = document.querySelectorAll(["data-lang"]);
-    // buttonList.forEach(element => {
-    //     element.classList.remove
-    // })
 }
 
-const buttonList = document.querySelectorAll(".lang-btn");
+const buttonList = document.querySelectorAll("button");
 buttonList.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-        const lang = e.target.dataset.lang;
-        setLanguage(lang);
-        updateTextContent(lang);
+    if ("href" in btn.dataset) {
+        const data = btn.dataset.href;
 
-        buttonList.forEach(otherBtn => {
-            otherBtn.classList.remove("selected");
-        })
-        btn.classList.add("selected");
-    })
+        btn.addEventListener("click", () => {
+            window.location.href = `${data}.html`;
+        });
+
+        if (window.location.pathname.split('/').pop() == `${data}.html`) {
+            btn.classList.add("selected");
+        }
+    }
+    else if ("lang" in btn.dataset) {
+        btn.addEventListener("click", (e) => {
+            const lang = e.target.dataset.lang;
+            setLanguage(lang);
+            updateTextContent(lang);
+    
+            // buttonList.forEach(otherBtn => {
+            //     if ("lang" in btn.dataset){
+            //         otherBtn.classList.remove("selected");
+            //     }
+            // })
+            // btn.classList.add("selected");
+        });
+    }
 })
 
-document.querySelectorAll(".lang-btn").forEach(button => {
-    button.addEventListener("click", (e) => {
-        const lang = e.target.dataset.lang;
-        setLanguage(lang);
-        updateTextContent(lang);
-
-
-        button.classList.add("selected");
-    });
-});
-
 window.addEventListener("DOMContentLoaded", loadLanguage);
-
-// const translation = {
-//     subtitle: {
-//         en: "Handmade guitars from Belfast",
-//         jp: "ベルファスト手作りギター"
-//     }
-// }

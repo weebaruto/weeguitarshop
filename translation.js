@@ -4,7 +4,7 @@ const translation = {
         jp: "Handmade classical guitars from Northern Ireland　"
     },
 
-    nav_home:{
+    nav_index:{
         en: "Home　",
         jp: "ホーム"
     },
@@ -14,7 +14,7 @@ const translation = {
         jp: "自己紹介"
     },
 
-    nav_pastwork: {
+    nav_photo: {
         en: "Past Work　",
         jp: "ギャラリー"
     },
