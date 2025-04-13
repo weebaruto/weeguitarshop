@@ -44,7 +44,7 @@ buttonList.forEach(btn => {
             window.location.href = `${data}.html`;
         });
 
-        if (window.location.pathname.split('/').pop() == `${data}.html`) {
+        if (document.documentElement.getAttribute("data-page") == data) {
             btn.classList.add("selected");
         }
     }
