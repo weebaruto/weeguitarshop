@@ -6,9 +6,14 @@ customElements.define("my-header", MyHeader);
 import { MyNavbar } from "./components/navbar.js";
 customElements.define("my-navbar", MyNavbar);
 
+import { mySlideshow } from "./components/slodeshow.js";
+customElements.define("my-slideshow", mySlideshow);
+
 function setLanguage(lang) {
     localStorage.setItem("userLanguage", lang);
 }
+
+
 
 function loadLanguage() {
     const savedLang = localStorage.getItem("userLanguage");
@@ -64,4 +69,19 @@ buttonList.forEach(btn => {
     }
 })
 
-window.addEventListener("DOMContentLoaded", loadLanguage);
+
+function startSlideshow() {
+    const slides = document.querySelectorAll('.slideshow-container img');
+    let current = 0;
+    
+    setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+    }, 2000);
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    loadLanguage();
+    startSlideshow();
+});
