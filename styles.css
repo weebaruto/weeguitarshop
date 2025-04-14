@@ -158,3 +158,18 @@ h3 {
     height: auto !important;
     margin-bottom:5px; /* to match column gap */
  }
+
+ .hide-left {
+    clip-path: inset(0 45% 35% 0);
+ }
+
+ .hide-right {
+    clip-path: inset(0 0 35% 45%);
+    right: 0;
+ }
+
+ .edge {
+    position: absolute;
+    opacity: 40%;
+    width: 600px;
+ }
