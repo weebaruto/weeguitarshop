@@ -9,6 +9,9 @@ customElements.define("my-navbar", MyNavbar);
 import { mySlideshow } from "./components/slodeshow.js";
 customElements.define("my-slideshow", mySlideshow);
 
+import { MyFooter } from "./components/footer.js";
+customElements.define("my-footer", MyFooter);
+
 function setLanguage(lang) {
     localStorage.setItem("userLanguage", lang);
 }

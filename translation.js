@@ -6,27 +6,27 @@ const translation = {
 
     nav_index:{
         en: "Home　",
-        jp: "ホーム"
+        jp: "ホーム　"
     },
 
     nav_about: {
         en: "About me　",
-        jp: "自己紹介"
+        jp: "自己紹介　"
     },
 
     nav_photo: {
         en: "Past Work　",
-        jp: "ギャラリー"
+        jp: "ギャラリー　"
     },
 
     find_me: {
         en: "Find me at　",
-        jp: "お問い合わせ"
+        jp: "お問い合わせ　"
     },
 
     address_title: {
         en: "Address　",
-        jp: "住所"
+        jp: "住所　"
     },
 
     address: {
