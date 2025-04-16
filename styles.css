@@ -5,9 +5,7 @@
 }
 
 a {
-     /* Removes underline */
     text-decoration: none;
-     /* Inherits the color from the parent element */
     color: inherit;
 }
 
@@ -59,65 +57,31 @@ h3 {
 button {
     font-size: 18px;
 }
-
-.header
-{
-    /*background-color: lightblue;*/
-    margin: 60px 0;
+.header {
+    margin: 60px 0 !important;
     margin-bottom: 50px;
-
 }
-
-.cont
-{
+.cont {
     margin: 20px;
 }
-
-.debug h1 h3
-{
-    color: green;
-}
-
-.center-text
-{
-    text-align: center;
-}
-
-.navbar
-{
+.navbar {
     border-bottom: 3px solid var(--color3);
     padding: 0px 50px; /*vertical and horizontal*/
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
 }
-
-.navbar button
-{
+.navbar button {
     padding: 0;
     padding-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
-.selected
-{
+.selected {
     border-bottom: 3px solid var(--color1);
     margin-bottom: -3px !important;
 }
-
-.flex
-{
-    display: flex;
-}
-
-.full-width
-{
-    width: 100%;
-}
-
-#main_cont
-{
+#main_cont {
     width: 70%;
     margin: 0 auto; /* "auto" centers THIS div horizontally */
     display: flex;
@@ -127,32 +91,26 @@ button {
 
 #main_cont > * {
     flex-grow: 0;
+    margin: 40px 0;
 }
 
-#main_img
-{
+#main_img {
     width: 50%;
 }
 
-#find-me
-{
+#find-me {
     flex: 1;
 }
-
-#find-me h2
-{
+#find-me h2 {
     text-align: right;
     padding: 2px 10px;
     border-bottom: 3px solid var(--color3);
     margin: 0;
 }
-
-#find-me h3
-{
+#find-me h3 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-
 #find-me p
 {
     margin: 5px 0;
@@ -163,13 +121,11 @@ button {
     column-count:5;
     column-gap:5px;
  }
-
  #gallery img {
     width: 100% !important;
     height: auto !important;
     margin-bottom:5px; /* to match column gap */
  }
-
  .frame {
     top: 50px;
     position: absolute;
@@ -178,33 +134,14 @@ button {
     height: 350px;
     z-index: -100;
  }
-
- .top {
-    top: 0;
- }
-
- .left {
-    left: 50px;
- }
-
- .right {
-    right: 50px;
- }
-
- .center {
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 240px;
-    height: 300px;
- }
  
+ /* SLIDESHOW */
  .slideshow-container {
-    width: 100%;
-    aspect-ratio: 2.5;
-    margin: 20px auto;
+    width: 60%;
+    aspect-ratio: 3;
+    margin: 20px auto !important;
     position: relative;
 }
-
 .slideshow-container img {
     position: absolute;
     width: 100%;
@@ -215,12 +152,12 @@ button {
     transition: opacity .8s ease-in-out;
     z-index: 0;
 }
-
 .slideshow-container img.active {
     opacity: 1;
     z-index: 1;
 }
 
+/* FOOTER */
 footer {
     background-color:lightgrey;
     margin-top: auto;
@@ -229,7 +166,6 @@ footer {
     /* Below organizes flex items with no space on side */
     justify-content: space-between;
 }
-
 footer div {
     display: flex;
     align-items: center;
@@ -237,8 +173,40 @@ footer div {
     justify-content: center;
     margin: 0 10px;
 }
-
 footer img {
     width: 25px;
     margin: 8px;
+}
+
+/* NEWS */
+.news {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    margin: 40px 0;
+    align-items: center;
+}
+
+.news h2 {
+    border-bottom: 3px solid var(--color1);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: center;
+    width: 40%;
+}
+.news h3 {
+    font-weight: bold;
+}
+.news img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.entry {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin: 10px 0;
+    width: 80%;
 }

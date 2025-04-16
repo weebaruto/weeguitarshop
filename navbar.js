@@ -7,7 +7,7 @@ export class MyNavbar extends HTMLElement {
                 <button data-href="photo" data-i18n="nav_photo"></button>
             </div>
             <div id="lang_menu" class="flex">
-                <button class="lang-btn" data-lang="en">english　</button>
+                <button class="lang-btn" data-lang="en">English　</button>
                 <button class="lang-btn" data-lang="jp">日本語　</button>
             </div>
         `;
