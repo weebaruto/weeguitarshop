@@ -170,9 +170,6 @@ button {
     margin-bottom:5px; /* to match column gap */
  }
 
-.frame-cont {
-}
-
  .frame {
     top: 50px;
     position: absolute;

@@ -1,15 +1,15 @@
 import translation from "./translation.js";
 
-import { MyHeader } from "./components/header.js";
+import { MyHeader } from "./header.js";
 customElements.define("my-header", MyHeader);
 
-import { MyNavbar } from "./components/navbar.js";
+import { MyNavbar } from "./navbar.js";
 customElements.define("my-navbar", MyNavbar);
 
-import { mySlideshow } from "./components/slodeshow.js";
+import { mySlideshow } from "./slodeshow.js";
 customElements.define("my-slideshow", mySlideshow);
 
-import { MyFooter } from "./components/footer.js";
+import { MyFooter } from "./footer.js";
 customElements.define("my-footer", MyFooter);
 
 function setLanguage(lang) {
