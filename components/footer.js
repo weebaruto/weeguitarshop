@@ -1,11 +1,26 @@
 export class MyFooter extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
-        <footer>
-            <p>email@email.com</p>
-            <a>Twitter</a>
-            <a>Instagram</a>
-        </footer>
+            <footer>
+                <div>
+                    <img src="img/icons/mail.png" alt="mail">
+                    <span>christopher.daisuke.lithier@email.com</span>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/icons/twit.png" alt="Twitter">
+                        <a>Twitter</a>
+                    </div>
+                    <div>
+                        <img src="img/icons/inst.png" alt="instagram">
+                        <a>Instagram</a>
+                    </div>
+                    <div>
+                        <img src="img/icons/fb.png" alt="Facebook">
+                        <a>Facebook</a>
+                    </div>
+                </div>
+            </footer>
         `;
     }
 }

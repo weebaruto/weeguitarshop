@@ -13,7 +13,6 @@ a {
 
 img {
     border-radius: 3px;
-    width: 100%;
 }
 
 body {
@@ -226,7 +225,23 @@ button {
 }
 
 footer {
-    background-color: aqua;
+    background-color:lightgrey;
     margin-top: auto;
-    padding: 30px;
+    padding: 10px;
+    display: flex;
+    /* Below organizes flex items with no space on side */
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+footer img {
+    width: 25px;
+    margin: 8px;
 }
