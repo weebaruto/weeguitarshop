@@ -19,6 +19,11 @@ const translation = {
         jp: "ギャラリー　"
     },
 
+    nav_contact: {
+        en: "Contact　",
+        jp: "お問合せ　"
+    },
+
     find_me: {
         en: "Find me at　",
         jp: "お問い合わせ　"
@@ -48,6 +53,16 @@ const translation = {
         en: "Saturday & Sunday<br>11:00AM - 3:00PM　",
         jp: "週末<br>午前11時～午後3時"
     },
+
+    news: {
+        en: "Recent News　",
+        jp: "ニュース"
+    },
+
+    template: {
+        en: "　",
+        jp: ""
+    }
 };
 
 export default translation;
