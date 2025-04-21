@@ -5,7 +5,8 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: var(--color2);
     color: inherit;
 }
 
@@ -176,6 +177,9 @@ footer div {
 footer img {
     width: 25px;
     margin: 8px;
+}
+footer a {
+    text-decoration: none;
 }
 
 /* NEWS */

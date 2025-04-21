@@ -16,8 +16,6 @@ function setLanguage(lang) {
     localStorage.setItem("userLanguage", lang);
 }
 
-
-
 function loadLanguage() {
     const savedLang = localStorage.getItem("userLanguage");
     if (savedLang) {
@@ -72,7 +70,6 @@ buttonList.forEach(btn => {
     }
 })
 
-
 function startSlideshow() {
     const slides = document.querySelectorAll('.slideshow-container img');
     let current = 0;
@@ -86,5 +83,7 @@ function startSlideshow() {
 
 window.addEventListener("DOMContentLoaded", () => {
     loadLanguage();
-    startSlideshow();
+    if (document.querySelector("my-slideshow")){
+        startSlideshow();
+    }
 });
