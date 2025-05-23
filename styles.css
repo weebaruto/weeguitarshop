@@ -19,6 +19,7 @@ body {
 }
 
 main {
+    max-width: 700px;
     width: 80%;
     margin: 0 auto; /* "auto" centers THIS div horizontally */
     display: flex;
@@ -37,6 +38,10 @@ h1 {
     color: var(--color1);
 }
 
+h2 {
+    font-size: var(--font-size2);
+}
+
 a {
     text-decoration: underline;
     text-decoration-color: var(--color2);
@@ -51,6 +56,11 @@ button {
     font: inherit; /* Inherits font from parent */
     color: inherit; /* Inherits text color */
     cursor: pointer;
+}
+
+img {
+    height: auto;
+    width: auto;
 }
 
 #navbar {
