@@ -8,12 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="id.css">
     </head>
     <body>
         <main>
             <h1>Christopher Daisuke<br>Luthier</h1>
-            <img src="img/DSC_0027.webp" alt="guitars" loading="lazy">
-            <h2>Website coming soon<br>ウェブサイト準備中</h2>
+            <!-- <img src="img/DSC_0027.webp" alt="guitars" loading="lazy"> -->
+            <my-slideshow class="slideshow-container"></my-slideshow>
+            <h1 class="center-text">Website coming soon<br>ウェブサイト準備中</h1>
             <!-- <div id="navbar">
                 <button>About</button>
                 <button>Models</button>
@@ -21,10 +23,16 @@
                 <button>Contact</button>
                 <button>日本語</button>
             </div> -->
-            <div id="navbar" style="margin: 20px 0;">
-                <button href="https://www.instagram.com/christopherdaisuke_luthier/">
-                    <img src="img/icons/inst.png" alt="instagram" loading="lazy" style="width: clamp(20px, 5%, 30px)">
-                </button>
+            <div class="spacer" style="height: 100px;">
+
+            </div>
+            <div class="social">
+                <img src="img/icons/graymail.png" alt="mail" loading="lazy">
+                <span>christopherdaisukeluthier@gmail.com</span>
+            </div>
+            <div class="social">
+                <img src="img/icons/inst.png" alt="instagram" loading="lazy">
+                <a>Instagram</a>
             </div>
         </main>
         <script type="module" src="main.js"></script>

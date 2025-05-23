@@ -1,9 +1,10 @@
 export class mySlideshow extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-                    <img src="img/nice_guitar_photos/2.jpg" alt="Image 1" class="active">
-                    <img src="img/nice_guitar_photos/7.jpg" alt="Image 2">
-                    <img src="img/nice_guitar_photos/5.jpg" alt="Image 3">
+                    <img src="img/2.webp" alt="Guitar Photo" class="active">
+                    <img src="img/7.webp" alt="Guitar Photo">
+                    <img src="img/9.webp" alt="Guitar Photo">
+                    <img src="img/10.webp" alt="Guitar Photo">
         `
     }
 }

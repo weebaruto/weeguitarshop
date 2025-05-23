@@ -78,7 +78,7 @@ function startSlideshow() {
         slides[current].classList.remove('active');
         current = (current + 1) % slides.length;
         slides[current].classList.add('active');
-    }, 2000);
+    }, 3000);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
