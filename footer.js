@@ -4,7 +4,7 @@ export class MyFooter extends HTMLElement {
             <footer>
                 <div>
                     <img src="img/icons/mail.png" alt="mail">
-                    <span>christopher.daisuke.lithier@email.com</span>
+                    <span>christopherdaisukeluthier@gmail.com</span>
                 </div>
                 <div>
                     <div>
