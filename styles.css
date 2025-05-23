@@ -1,7 +1,7 @@
 :root{
     --color_main: #222;
-    --font-size1: clamp(1rem, calc(2rem + 1vw), 100rem);
-    --font-size2: clamp(1rem, calc(1rem + .5vw), 10rem);
+    --font-size1: clamp(.5rem, calc(1rem + 2vw), 2rem);
+    --font-size2: clamp(.5rem, calc(.5rem + 1vw), 1.2rem);
 }
 
 html {
@@ -40,6 +40,7 @@ h1 {
 
 h2 {
     font-size: var(--font-size2);
+    text-align: center;
 }
 
 a {
