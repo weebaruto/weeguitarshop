@@ -13,6 +13,7 @@
     --font-size-small: clamp(1rem, calc(.3rem + 2vw), 1rem);
     --base-max-width: 1000px;
     --medium-width: calc(0.8 * var(--base-max-width));
+    --small-width: calc(0.3 * var(--base-max-width));
 }
 
 html {
@@ -63,6 +64,7 @@ h1 {
 
 h2 {
     font-size: var(--font-size-medium);
+    margin: 0;
 }
 
 p {
@@ -86,8 +88,16 @@ button {
 }
 
 img {
-    width: 100%;
-    height: auto;
+    /* width: 100%; */
+    /* height: auto; */
+}
+
+ul {
+    margin: 0;
+}
+
+span {
+    margin: 0;
 }
 
 my-navbar {
@@ -156,4 +166,16 @@ my-navbar {
 
 .selected {
     font-weight: 800;
+}
+
+.flexbox2row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+main > * {
+    margin: 10px;
 }
