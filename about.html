@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" data-page="about">
     <head>
-        <title>Christopher Daisuke Luthier</title>
+        <title>About me │ Christopher Daisuke Luthier</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css?v=1.2">
+        <link rel="icon" type="image/x-icon" href="img/favicon_single.png">
     </head>
     <body>
-        <div id="main_cont">
-            <my-header class="header center-text full-width"></my-header>
-            <my-navbar class="navbar full-width"></my-navbar>
-        </div>
+        <main>
+            <header>
+                <h1>
+                    <a href="index.html">Christopher Daisuke<br>Luthier</a>
+                </h1>
+                <div class="media-button">
+                    <a href="https://www.instagram.com/christopherdaisuke_luthier/">
+                        <img src="img/icons/inst.png">
+                    </a>
+                    <a href="mailto:christopherdaisukeluthier@gmail.com">
+                        <img src="img/icons/gmail.png">
+                    </a>
+                </div>
+                <my-navbar></my-navbar>
+            </header>
+            <div style="padding:5px; display: flex; flex-wrap: wrap; justify-content: center;">
+                <img style="display: inline; width: 100%; max-width: 500px; float:right;" src="img/guitar_label_thin.jpg" alt="guitar label photo">
+                <div style="max-width: calc(0.8 * var(--base-max-width));">
+                    <h2 style="display:block; min-width: 200px;">Luthier from Japan in Northern Ireland</h2>
+                    <p style="display:block;">I was born in London in 1999, to a Japanese mother and a Northern Irish father. When I was five, we moved to Tokyo, Japan. Being raised by parents who both loved music made music a big part of my life from a young age. After a year of sneaking into my brother’s room to play guitar, I received my first guitar as a birthday gift from my parents when I turned twelve.</p>
+                    <p style="display:block;">When I was fifteen, I discovered the world of luthiery and handmade guitars, and at that moment, it became my dream job. As soon as I entered high school, I started working on my first guitar with a local luthier, Takeshi Iwamoto.</p>
+                    <p>After finishing my first guitar, I made the decision to leave high school and travel to Canada, where I began living and working with luthier Sergei de Jonge as an apprentice. Despite my limited knowledge and experience, he encouraged me to work on every process of guitar making from the very beginning, allowing me to refine my skills, and deepen my understanding of guitar making.</p>
+                    <p>After two and a half years of apprenticeship and a short period back in Japan, I moved to Northern Ireland and started working at Lowden Guitars. I spent most of my time in the inlay department, doing bindings and inlays, until I left.</p>
+                    <p>In 2024, I set up my own workshop in Castledawson, my father’s hometown.</p>
+                </div>
+            </div>
+        </main>
         <script type="module" src="main.js"></script>
     </body>
 </html>

@@ -1,0 +1,35 @@
+.flex{display: flex;flex: 0 1 auto;}
+.row{flex-direction: row;}
+.column{flex-direction: column;}
+
+.top {
+   top: 0;
+}
+
+.left {
+   left: 50px;
+}
+
+.right {
+   right: 50px;
+}
+
+.center {
+   left: 50%;
+   transform: translate(-50%, 0%);
+   width: 240px;
+   height: 300px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+.underline {
+   text-decoration: underline;
+}

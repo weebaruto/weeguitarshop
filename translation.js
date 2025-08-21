@@ -14,6 +14,11 @@ const translation = {
         jp: "自己紹介　"
     },
 
+    nav_guitars: {
+        en: "Guitars　",
+        jp: "ギター　"
+    },
+
     nav_photo: {
         en: "Past Work　",
         jp: "ギャラリー　"

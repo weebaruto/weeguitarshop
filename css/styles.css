@@ -1,0 +1,159 @@
+@import url(classes.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --color_main: #000;
+    --font-size-large: clamp(1.4rem, calc(1rem + 2vw), 2rem);
+    --font-size-medium: clamp(1rem, calc(.3rem + 3vw), 1.5rem);
+    --font-size-small: clamp(1rem, calc(.3rem + 2vw), 1rem);
+    --base-max-width: 1000px;
+    --medium-width: calc(0.8 * var(--base-max-width));
+}
+
+html {
+    /* base font size AKA 1rem */
+    font-size: 16px; 
+}
+
+body {
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--color1);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main {
+    max-width: var(--base-max-width);
+    width: 90%;
+    margin: 0 auto; /* "auto" centers THIS div horizontally */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: var(--font-size-large);
+    line-height: 1em;
+    color: var(--color1);
+    display: inline;
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+}
+
+p {
+    font-size: var(--font-size-small);
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: var(--color_main);
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+my-navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    
+    /*  space-between might be better!
+        when nav bar is 2 row
+        currently the start and end are not aligned */
+    justify-content: center;
+
+        /* might wanna make this bigger
+            when the navbar is virtical it looks too compact */
+    column-gap: 1.5em;
+    font-size: var(--font-size-medium);
+    padding-top: .5rem;
+}
+
+ /* SLIDESHOW */
+ .slideshow-container {
+    max-width: var(--medium-width);
+    width: 100%;
+    aspect-ratio: 1.5;
+    position: relative;
+}
+.slideshow-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity .8s ease-in-out;
+    z-index: 0;
+}
+.slideshow-container img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: var(--font-size-small);
+}
+
+.social img {
+    width: clamp(20px, 5%, 30px);
+    margin: 8px;
+}
+
+.media-button {
+    display: flex;
+    align-self: end;
+}
+
+.media-button img {
+    width: 20px;
+    margin: 5px;
+}
+
+.selected {
+    font-weight: 800;
+}

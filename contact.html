@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" data-page="contact">
     <head>
-        <title>Christopher Daisuke Luthier</title>
+        <title>Contact │ Christopher Daisuke Luthier</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="id.css">
-        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="css/styles.css?v=1.2">
+        <link rel="icon" type="image/x-icon" href="img/favicon_single.png">
     </head>
     <body>
-        <div class="frame-cont">
-            <img src="img/frame-noline-left.png" class="frame left">
-            <img src="img/frame-noline-right.png" class="frame right">
-        </div>
-        <div id="main_cont">
-            <my-header class="header center-text"></my-header>
-            <my-navbar class="navbar"></my-navbar>
+        <main>
+            <header>
+                <h1>
+                    <a href="index.html">Christopher Daisuke<br>Luthier</a>
+                </h1>
+                <div class="media-button">
+                    <a href="https://www.instagram.com/christopherdaisuke_luthier/">
+                        <img src="img/icons/inst.png">
+                    </a>
+                    <a href="mailto:christopherdaisukeluthier@gmail.com">
+                        <img src="img/icons/gmail.png">
+                    </a>
+                </div>
+                <my-navbar></my-navbar>
+            </header>
+
+            <img src="img/TrevBensPhotography_3.webp" alt="Guitar Photograph by TrevBens Photography" loading="lazy"
+            style="max-width: 500px;">
 
             <div id="contact">
-                <p>
-                    If you are interested in commissioning an instrument or inquiring about current availability, please feel free to contact me directly. <br>
-                    I would be delighted to answer any questions you may have.<br><br>
-                    
-                    At times, a brief phone call can be the most effective way to communicate. <br>
-                    Should you prefer this, provide your phone number along with a convenient time to call, and I will reach out accordingly.
-                </p>
-                <h2>
-                    Contact Information
-                </h2>
-                <h4>Email</h4>
-                <span>placeholder@placeholder.com</span>
-                <br>
-                <h4>Phone</h4>
-                <span>+44 1234 56789</span>
-                <br>
-                <h4>Address</h4>
-                <span>123 Nice street, Cool town, Awesomecity, UK 123-4567</span>
+                <span>If you have any questions or need further information, please feel free to get in touch.</span>
+                <a href="https://www.instagram.com/christopherdaisuke_luthier/">
+                    <h4>Email</h4>
+                    <span class="underline">placeholder@placeholder.com</span>
+                </a>
                 <br>
                 <br>
-                <h4>Twitter</h4><a>@placeholder</a>
-                <br>
-                <h4>Instagram</h4><a href="https://www.instagram.com/christopherdaisuke_luthier/">@christopherdaisuke_luthier</a>
-                <br>
-                <h4>Facebook</h4><a>Placeholder</a>
+                <h4>Instagram</h4>
+                <a class="underline" href="https://www.instagram.com/christopherdaisuke_luthier/">
+                    @christopherdaisuke_luthier
+                </a>
             </div>
-        </div>
+        </main>
         <script type="module" src="main.js"></script>
     </body>
 </html>
