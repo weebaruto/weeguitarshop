@@ -8,8 +8,9 @@
 
 :root{
     --color_main: #000;
-    --font-size-large: clamp(1.4rem, calc(1rem + 2vw), 2rem);
-    --font-size-medium: clamp(1rem, calc(.3rem + 3vw), 1.5rem);
+    --font-size-large: clamp(1.5rem, calc(1rem + 2vw), 2rem);
+    --font-size-semilarge: clamp(1.4rem, calc(.3rem + 2vw), 1.5rem);
+    --font-size-medium: clamp(1rem, calc(.3rem + 3vw), 1.3rem);
     --font-size-small: clamp(1rem, calc(.3rem + 2vw), 1rem);
     --base-max-width: 1000px;
     --medium-width: calc(0.8 * var(--base-max-width));
@@ -63,7 +64,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-semilarge);
     margin: 0;
 }
 
@@ -85,11 +86,6 @@ button {
     font: inherit;
     color: inherit;
     cursor: pointer;
-}
-
-img {
-    /* width: 100%; */
-    /* height: auto; */
 }
 
 ul {
